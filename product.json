@@ -1,0 +1,132 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "Konknni swadik sangeet",
+                "price": 29.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/JeorgeFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "Konkani unforgettable hits",
+                "price": 120.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/KKfr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "Noman Noman Tuka Goa!",
+                "price": 129.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/KonFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "Hit music from Goa",
+                "price": 222.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/goaFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "Londoncho Mog",
+                "price": 188.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/LononFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "Konkannchim Mannkam Motiam",
+                "price": 132.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/AlfFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "Alfred Rose & Rita Rose",
+                "price": 145.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/RoseFr.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "Love in Goa",
+                "price": 133.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./img/LoveGoaFr.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
