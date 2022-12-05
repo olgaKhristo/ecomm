@@ -46,7 +46,7 @@ products.forEach(product => {
         <article class="products">
             <div class="img-container">
                 <img  class="product-img" src=${product.image} alt="">
-                <button class="bag-btn" data-id=${product.id}><i class="fas fa-shopping-cart"></i>add to bag</button>
+                <button class="bag-btn" data-id=${product.id}><i class="fas fa-shopping-cart"></i>add to cart</button>
             </div>
             <h3>${product.title}</h3>
             <h4>£${product.price}</h4>
@@ -138,6 +138,41 @@ hideCart(){
     cartOverlay.classList.remove("transparentBcg");
     cartDOM.classList.remove("showCart");
 }
+cartLogic(){
+    //clear cart btn
+    clearCartBtn.addEventListener('click', () => { this.clearCart()
+    });
+    //cart functionality
+    cartContent.addEventListener('click', e =>{
+        if(e.target.classList.contains('remove-item')){
+            let removeItem = e.target;
+         let id = removeItem.dataset.id;
+         cartContent.removeChild(removeItem.parentElement.parentElement)
+         this.removeItem(id);
+        }
+
+    });
+}
+clearCart(){
+    let cartItems = cart.map(item => item.id);
+    cartItems.forEach(id => this.removeItem(id))
+    console.log(cartContent.children)
+    while(cartContent.children.length>0){
+        cartContent.removeChild(cartContent.children[0])
+    }
+    this.hideCart();
+}
+removeItem(id){
+    cart = cart.filter(item => item.id !== id);
+    this.setCartValues(cart);
+    Storage.saveCart(cart);
+    let button = this.getSingleButton(id);
+    button.disabled = false;
+    button.innerHTML = `<i class = "fas fa-shopping-cart"></i>add to cart` 
+}
+getSingleButton(id){
+    return buttonsDOM.find(button => button.dataset.id === id);
+}
 }
 
 //local storage
@@ -168,7 +203,8 @@ products.getProducts().then(products =>{ ui.displayProducts(products);
     Storage.saveProducts(products);
 }).then(() => {
     ui.getBagButtons()
-})
+    ui.cartLogic()
+});
 
-})
+});
 
