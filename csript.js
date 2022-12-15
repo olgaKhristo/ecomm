@@ -233,13 +233,21 @@ products.getProducts().then(products =>{ ui.displayProducts(products);
 });
 
 //drop down menue(humburger)
-const humburger = document.querySelector(".humburger")
+const dropDownMenue = document.querySelector(".navbar-center")
+
 const navMenue = document.querySelector(".nav-menue")
-humburger.addEventListener('click', () => {
-    humburger.classList.toggle("active")
-    navMenue.classList.toggle("active")
-})
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
-    humburger.classList.remove("active")
-    navMenue.classList.remove("active")
-}))
+
+const navMenueDOM = document.querySelector('.nav-menue');
+showNavMenue(){
+    cartOverlay.classList.add("transparentBcg");
+}
+   // cartDOM.classList.add("showCart");
+
+dropDownMenue.addEventListener('click', this.showNavMenue)
+//humburger.addEventListener("click", () => {
+   // humburger.classList.toggle("active")
+  //  navMenue.classList.toggle("active") })
+
+//document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
+//    humburger.classList.remove("active")
+//    navMenue.classList.remove("active") }))
