@@ -232,3 +232,14 @@ products.getProducts().then(products =>{ ui.displayProducts(products);
 
 });
 
+//drop down menue(humburger)
+const humburger = document.querySelector(".humburger")
+const navMenue = document.querySelector(".nav-menue")
+humburger.addEventListener('click', () => {
+    humburger.classList.toggle("active")
+    navMenue.classList.toggle("active")
+})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
+    humburger.classList.remove("active")
+    navMenue.classList.remove("active")
+}))
