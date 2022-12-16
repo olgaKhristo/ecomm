@@ -233,21 +233,7 @@ products.getProducts().then(products =>{ ui.displayProducts(products);
 });
 
 //drop down menue(humburger)
-const dropDownMenue = document.querySelector(".navbar-center")
+const reveal = () => {
+    document.getElementById("box").classList.toggle("active");
 
-const navMenue = document.querySelector(".nav-menue")
-
-const navMenueDOM = document.querySelector('.nav-menue');
-showNavMenue(){
-    cartOverlay.classList.add("transparentBcg");
-}
-   // cartDOM.classList.add("showCart");
-
-dropDownMenue.addEventListener('click', this.showNavMenue)
-//humburger.addEventListener("click", () => {
-   // humburger.classList.toggle("active")
-  //  navMenue.classList.toggle("active") })
-
-//document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
-//    humburger.classList.remove("active")
-//    navMenue.classList.remove("active") }))
+};
