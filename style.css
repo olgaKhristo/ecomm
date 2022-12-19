@@ -20,6 +20,140 @@ body {
     background: var(--mainWhite);
     font-family: "Lato", sans-serif;
 }
+/*------FOR CONTACT PAGE-------*/
+.containerC{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    background: var(--primaryColor);
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-rigth {
+    flex-basis: 40%;
+    padding: 40px;
+    background:var(--mainGrey) ;
+}
+.containerC h1{
+    margin-bottom: 10px;
+}
+.containerC p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;    
+}
+.input-row .input-group{
+    flex-basis: 45%;    
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+.contact-left button{
+    margin-top: 20px;
+}
+.contact-left h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-rigth h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;   
+}
+tr td{
+    padding-top: 5px;
+}
+
+
+/*------end of CONTACT PAGE-------*/
+
+
+/*------FOR MISSION PAGE-------*/
+.about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: var(--primaryColor);
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.mainMission{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.about-text h1{
+    color:#222;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5 {
+    color: #222;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: var(--mainSpacing);
+}
+.about-text p{
+    color: #222;
+    letter-spacing: var(--mainSpacing);
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;    
+}
+button{
+    background: #ececec;
+    color: #222;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #ececec;
+    cursor: pointer;
+
+}
+
+
+/*------END OF MISSION PAGE-------*/
+
 /*------drop down menue-------*/
 li {
     list-style: none;
